@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #080808;
+}
+
+.logo {
+    color: #e62429;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e62429;
+}
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(90deg, #080808, #4a080b);
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #e62429;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.7;
+    color: #ddd;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background-color: #e62429;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #a90f15;
+}
+
+.heroes {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: #333;
+}
+
+.emoji {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #e62429;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.movies {
+    background-color: #1b1b1b;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.movie {
+    background-color: #292929;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    color: #e62429;
+    margin-bottom: 10px;
+}
+
+.about {
+    padding: 60px 15%;
+    text-align: center;
+}
+
+.about p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 25px;
+    background-color: #080808;
+    text-align: center;
+    color: #888;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
